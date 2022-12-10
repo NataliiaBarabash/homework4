@@ -10,16 +10,19 @@ def max_number(x, y):
 max_number(17, 25)
 
 
-def min_number(x, y):
-    if x < y:
+def min_number(x, y, z):
+    if x < y and x < z:
         print(x)
         return x
-    else:
+    elif y < x and y < z:
         print(y)
         return y
+    else:
+        print(z)
+        return z
 
 
-min_number(13, 33)
+min_number(25, 44, 57)
 
 
 def module_x(x):
@@ -50,4 +53,4 @@ def number_is_positive(x):
         print('The number is positive')
 
 
-number_is_positive(7)
+number_is_positive(5)
